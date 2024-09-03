@@ -1,0 +1,2823 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+15:54:37,012 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+15:54:37,013 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - No custom configurators were discovered as a service.
+15:54:37,013 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:54:37,013 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:54:37,015 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+15:54:37,015 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+15:54:37,019 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:54:37,019 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:54:37,019 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:54:37,020 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:54:37,020 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/kailesuoo/Downloads/CSCI4448/homework-2-arcane-setup-ksuoo/build/resources/main/logback.xml]
+15:54:37,063 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:54:37,063 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:54:37,065 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:54:37,080 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [Same_As_Println]
+15:54:37,080 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:54:37,080 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:54:37,080 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [Game_Status] not referenced. Skipping further processing.
+15:54:37,080 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [File_Output] not referenced. Skipping further processing.
+15:54:37,080 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+15:54:37,081 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:54:37,081 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [arcane] to INFO
+15:54:37,082 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [arcane] to false
+15:54:37,082 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [Same_As_Println] to Logger[arcane]
+15:54:37,082 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2c9399a4 - End of configuration.
+15:54:37,082 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@191ae03f - Registering current configuration as safe fallback point
+15:54:37,082 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 63 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Starting play...
+ARCANE MAZE: turn 0
+	Center:
+	 	 Adventurers: Glutton 0(health: 5.0)
+	 	 Creatures: Creature 1(health: 3.0)
+	 	 Food: Food 0, Food 5, Food 6
+	North:
+	 	 Adventurers: Coward 0(health: 3.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 5.0)
+	 	 Creatures: Creature 7(health: 3.0)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 8.0)
+	 	 Creatures: Demon 4(health: 15.0)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Adventurer 0(health: 5.0), Knight 2(health: 8.0)
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 8.0)
+	 	 Creatures: Demon 1(health: 15.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 5.0), Adventurer 3(health: 5.0)
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 15.0), Demon 3(health: 15.0), Demon 5(health: 15.0)
+	 	 Food: 
+Glutton 0(health: 6.0) just ate a Food 0
+Rolled a 3
+Rolled a 3
+Glutton 0(health: 6.0) fought Creature 1(health: 3.0)
+Glutton 0(health: 5.5) drew against Creature 1(health: 2.5)
+Coward 0(health: 3.0) moved from North to Northwest
+Rolled a 3
+Rolled a 6
+Adventurer 1(health: 5.0) fought Creature 7(health: 3.0)
+Adventurer 1(health: 1.5) lost to Creature 7(health: 2.5)
+Rolled a 5
+Rolled a 3
+Knight 0(health: 8.0) fought Demon 4(health: 15.0)
+Knight 0(health: 7.5) beat Demon 4(health: 12.5)
+Knight 2(health: 8.0) moved from Northwest to West
+Adventurer 0(health: 5.0) moved from Northwest to North
+Coward 0(health: 3.0) moved from Northwest to North
+Rolled a 3
+Rolled a 5
+Knight 1(health: 8.0) fought Demon 1(health: 15.0)
+Knight 1(health: 5.5) lost to Demon 1(health: 14.5)
+Rolled a 2
+Rolled a 3
+Adventurer 2(health: 5.0) fought Demon 0(health: 15.0)
+Adventurer 2(health: 3.5) lost to Demon 0(health: 14.5)
+Rolled a 4
+Rolled a 4
+Adventurer 3(health: 5.0) fought Demon 3(health: 15.0)
+Adventurer 3(health: 4.5) drew against Demon 3(health: 14.5)
+ARCANE MAZE: turn 1
+	Center:
+	 	 Adventurers: Glutton 0(health: 5.5)
+	 	 Creatures: Creature 1(health: 2.5)
+	 	 Food: Food 5, Food 6
+	North:
+	 	 Adventurers: Adventurer 0(health: 5.0), Coward 0(health: 3.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 1.5)
+	 	 Creatures: Creature 7(health: 2.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 7.5), Knight 2(health: 8.0)
+	 	 Creatures: Demon 4(health: 12.5)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 5.5)
+	 	 Creatures: Demon 1(health: 14.5)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 3.5), Adventurer 3(health: 4.5)
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 14.5), Demon 3(health: 14.5), Demon 5(health: 15.0)
+	 	 Food: 
+Glutton 0(health: 6.5) just ate a Food 5
+Rolled a 5
+Rolled a 2
+Glutton 0(health: 6.5) fought Creature 1(health: 2.5)
+Glutton 0(health: 6.0) beat Creature 1(health: 0.0); DEAD
+Adventurer 0(health: 5.0) moved from North to Northeast
+Coward 0(health: 3.0) moved from North to Northwest
+Rolled a 3
+Rolled a 3
+Adventurer 1(health: 1.5) fought Creature 7(health: 2.5)
+Adventurer 1(health: 1.0) drew against Creature 7(health: 2.0)
+Rolled a 1
+Rolled a 1
+Knight 2(health: 8.0) fought Demon 4(health: 12.5)
+Knight 2(health: 7.5) drew against Demon 4(health: 12.0)
+Rolled a 5
+Rolled a 4
+Knight 0(health: 7.5) fought Demon 4(health: 12.0)
+Knight 0(health: 7.0) beat Demon 4(health: 10.5)
+Coward 0(health: 3.0) moved from Northwest to West
+Rolled a 2
+Rolled a 6
+Knight 1(health: 5.5) fought Demon 1(health: 14.5)
+Knight 1(health: 1.0) lost to Demon 1(health: 14.0)
+Rolled a 4
+Rolled a 5
+Adventurer 0(health: 5.0) fought Demon 1(health: 14.0)
+Adventurer 0(health: 3.5) lost to Demon 1(health: 13.5)
+Rolled a 3
+Rolled a 3
+Adventurer 3(health: 4.5) fought Demon 5(health: 15.0)
+Adventurer 3(health: 4.0) drew against Demon 5(health: 14.5)
+Rolled a 2
+Rolled a 3
+Adventurer 3(health: 4.0) fought Demon 0(health: 14.5)
+Adventurer 3(health: 2.5) lost to Demon 0(health: 14.0)
+ARCANE MAZE: turn 2
+	Center:
+	 	 Adventurers: Glutton 0(health: 6.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: Food 6
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 1.0)
+	 	 Creatures: Creature 7(health: 2.0)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 7.0), Knight 2(health: 7.5), Coward 0(health: 3.0)
+	 	 Creatures: Demon 4(health: 10.5)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 1.0), Adventurer 0(health: 3.5)
+	 	 Creatures: Demon 1(health: 13.5)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 3.5), Adventurer 3(health: 2.5)
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 14.0), Demon 3(health: 14.5), Demon 5(health: 14.5)
+	 	 Food: 
+Glutton 0(health: 7.0) just ate a Food 6
+Rolled a 2
+Rolled a 5
+Adventurer 1(health: 1.0) fought Creature 7(health: 2.0)
+Adventurer 1(health: 0.0); DEAD lost to Creature 7(health: 1.5)
+Rolled a 1
+Rolled a 5
+Knight 2(health: 7.5) fought Demon 4(health: 10.5)
+Knight 2(health: 3.0) lost to Demon 4(health: 10.0)
+Rolled a 1
+Rolled a 4
+Knight 0(health: 7.0) fought Demon 4(health: 10.0)
+Knight 0(health: 3.5) lost to Demon 4(health: 9.5)
+Rolled a 4
+Rolled a 6
+Knight 0(health: 3.5) fought Demon 4(health: 9.5)
+Knight 0(health: 1.0) lost to Demon 4(health: 9.0)
+Rolled a 1
+Rolled a 3
+Adventurer 0(health: 3.5) fought Demon 1(health: 13.5)
+Adventurer 0(health: 1.0) lost to Demon 1(health: 13.0)
+Rolled a 4
+Rolled a 3
+Knight 1(health: 1.0) fought Demon 1(health: 13.0)
+Knight 1(health: 0.5) beat Demon 1(health: 11.5)
+Rolled a 3
+Rolled a 3
+Adventurer 2(health: 3.5) fought Demon 3(health: 14.5)
+Adventurer 2(health: 3.0) drew against Demon 3(health: 14.0)
+Rolled a 5
+Rolled a 4
+Adventurer 2(health: 3.0) fought Demon 5(health: 14.5)
+Adventurer 2(health: 2.5) beat Demon 5(health: 13.0)
+ARCANE MAZE: turn 3
+	Center:
+	 	 Adventurers: Glutton 0(health: 7.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 1.0), Knight 2(health: 3.0), Coward 0(health: 3.0)
+	 	 Creatures: Demon 4(health: 9.0)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.5), Adventurer 0(health: 1.0)
+	 	 Creatures: Demon 1(health: 11.5)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 2.5), Adventurer 3(health: 2.5)
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 14.0), Demon 3(health: 14.0), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 7.0) moved from Center to West
+Rolled a 6
+Rolled a 6
+Glutton 0(health: 7.0) fought Demon 4(health: 9.0)
+Glutton 0(health: 6.5) drew against Demon 4(health: 8.5)
+Rolled a 4
+Rolled a 5
+Knight 2(health: 3.0) fought Demon 4(health: 8.5)
+Knight 2(health: 1.5) lost to Demon 4(health: 8.0)
+Rolled a 4
+Rolled a 1
+Glutton 0(health: 6.5) fought Demon 4(health: 8.0)
+Glutton 0(health: 6.0) beat Demon 4(health: 4.5)
+Rolled a 3
+Rolled a 3
+Glutton 0(health: 6.0) fought Demon 4(health: 4.5)
+Glutton 0(health: 5.5) drew against Demon 4(health: 4.0)
+Rolled a 1
+Rolled a 4
+Knight 0(health: 1.0) fought Demon 4(health: 4.0)
+Knight 0(health: 0.0); DEAD lost to Demon 4(health: 3.5)
+Rolled a 5
+Rolled a 5
+Glutton 0(health: 5.5) fought Demon 4(health: 3.5)
+Glutton 0(health: 5.0) drew against Demon 4(health: 3.0)
+Rolled a 4
+Rolled a 1
+Adventurer 0(health: 1.0) fought Demon 1(health: 11.5)
+Adventurer 0(health: 0.5) beat Demon 1(health: 8.0)
+Rolled a 3
+Rolled a 2
+Knight 1(health: 0.5) fought Demon 1(health: 8.0)
+Knight 1(health: 0.0); DEAD beat Demon 1(health: 6.5)
+Rolled a 6
+Rolled a 1
+Adventurer 2(health: 2.5) fought Demon 0(health: 14.0)
+Adventurer 2(health: 2.0) beat Demon 0(health: 8.5)
+Rolled a 1
+Rolled a 5
+Adventurer 3(health: 2.5) fought Demon 3(health: 14.0)
+Adventurer 3(health: 0.0); DEAD lost to Demon 3(health: 13.5)
+ARCANE MAZE: turn 4
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Knight 2(health: 1.5), Coward 0(health: 3.0), Glutton 0(health: 5.0)
+	 	 Creatures: Demon 4(health: 3.0)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.5)
+	 	 Creatures: Demon 1(health: 6.5)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 2.0), Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 13.5), Demon 5(health: 13.0)
+	 	 Food: 
+Rolled a 2
+Rolled a 4
+Glutton 0(health: 5.0) fought Demon 4(health: 3.0)
+Glutton 0(health: 2.5) lost to Demon 4(health: 2.5)
+Rolled a 2
+Rolled a 5
+Coward 0(health: 3.0) fought Demon 4(health: 2.5)
+Coward 0(health: 0.0); DEAD lost to Demon 4(health: 2.0)
+Rolled a 3
+Rolled a 3
+Knight 2(health: 1.5) fought Demon 4(health: 2.0)
+Knight 2(health: 1.0) drew against Demon 4(health: 1.5)
+Rolled a 4
+Rolled a 3
+Glutton 0(health: 2.5) fought Demon 4(health: 1.5)
+Glutton 0(health: 2.0) beat Demon 4(health: 0.0); DEAD
+Rolled a 6
+Rolled a 4
+Adventurer 0(health: 0.5) fought Demon 1(health: 6.5)
+Adventurer 0(health: 0.0); DEAD beat Demon 1(health: 4.0)
+Rolled a 4
+Rolled a 5
+Adventurer 2(health: 2.0) fought Demon 3(health: 13.5)
+Adventurer 2(health: 0.5) lost to Demon 3(health: 13.0)
+ARCANE MAZE: turn 5
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Knight 2(health: 1.0), Coward 0(health: 0.0); DEAD, Glutton 0(health: 2.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 4.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.5), Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 13.0), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.0) moved from West to Center
+Knight 2(health: 1.0) moved from West to Northwest
+Knight 2(health: 1.0) moved from Northwest to North
+Rolled a 2
+Rolled a 1
+Adventurer 2(health: 0.5) fought Demon 3(health: 13.0)
+Adventurer 2(health: 0.0); DEAD beat Demon 3(health: 11.5)
+ARCANE MAZE: turn 6
+	Center:
+	 	 Adventurers: Glutton 0(health: 2.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: Knight 2(health: 1.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 4.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.0) moved from Center to North
+Glutton 0(health: 2.0) moved from North to Northwest
+Knight 2(health: 1.0) moved from North to Northeast
+Glutton 0(health: 2.0) moved from Northwest to West
+Rolled a 5
+Rolled a 5
+Knight 2(health: 1.0) fought Demon 1(health: 4.0)
+Knight 2(health: 0.5) drew against Demon 1(health: 3.5)
+ARCANE MAZE: turn 7
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 2.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.5)
+	 	 Creatures: Demon 1(health: 3.5)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.0) moved from West to Center
+Rolled a 1
+Rolled a 4
+Knight 2(health: 0.5) fought Demon 1(health: 3.5)
+Knight 2(health: 0.0); DEAD lost to Demon 1(health: 3.0)
+ARCANE MAZE: turn 8
+	Center:
+	 	 Adventurers: Glutton 0(health: 2.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.0) moved from Center to West
+Glutton 0(health: 2.0) moved from West to Center
+ARCANE MAZE: turn 9
+	Center:
+	 	 Adventurers: Glutton 0(health: 2.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 1.5)
+	 	 Food: Food 3
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.0) moved from Center to South
+Glutton 0(health: 3.0) just ate a Food 3
+Rolled a 6
+Rolled a 2
+Glutton 0(health: 3.0) fought Creature 7(health: 1.5)
+Glutton 0(health: 2.5) beat Creature 7(health: 0.0); DEAD
+ARCANE MAZE: turn 10
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 2.5)
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.5) moved from South to Center
+ARCANE MAZE: turn 11
+	Center:
+	 	 Adventurers: Glutton 0(health: 2.5)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.5) moved from Center to West
+Glutton 0(health: 2.5) moved from West to Northwest
+Glutton 0(health: 2.5) moved from Northwest to West
+ARCANE MAZE: turn 12
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 2.5)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.5) moved from West to Northwest
+Glutton 0(health: 2.5) moved from Northwest to North
+ARCANE MAZE: turn 13
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: Glutton 0(health: 2.5)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 3.0)
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 2.5) moved from North to Northeast
+Rolled a 4
+Rolled a 1
+Glutton 0(health: 2.5) fought Demon 1(health: 3.0)
+Glutton 0(health: 2.0) beat Demon 1(health: 0.0); DEAD
+ARCANE MAZE: turn 14
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Glutton 0(health: 2.0)
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: Food 2, Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) just ate a Food 2
+ARCANE MAZE: turn 15
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: Food 7
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) just ate a Food 7
+ARCANE MAZE: turn 16
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Glutton 0(health: 4.0)
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from Northeast to North
+ARCANE MAZE: turn 17
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: Glutton 0(health: 4.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from North to Northeast
+Glutton 0(health: 4.0) moved from Northeast to North
+ARCANE MAZE: turn 18
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: Glutton 0(health: 4.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from North to Center
+ARCANE MAZE: turn 19
+	Center:
+	 	 Adventurers: Glutton 0(health: 4.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from Center to West
+Glutton 0(health: 4.0) moved from West to Northwest
+Glutton 0(health: 4.0) moved from Northwest to North
+ARCANE MAZE: turn 20
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: Glutton 0(health: 4.0)
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from North to Northwest
+Glutton 0(health: 4.0) moved from Northwest to West
+ARCANE MAZE: turn 21
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 4.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from West to Northwest
+Glutton 0(health: 4.0) moved from Northwest to West
+ARCANE MAZE: turn 22
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 4.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 3.0), Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 4
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 4.0) moved from West to Southwest
+Glutton 0(health: 5.0) just ate a Food 4
+Rolled a 4
+Rolled a 1
+Glutton 0(health: 5.0) fought Creature 4(health: 3.0)
+Glutton 0(health: 4.5) beat Creature 4(health: 0.0); DEAD
+ARCANE MAZE: turn 23
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: Glutton 0(health: 4.5)
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Rolled a 5
+Rolled a 3
+Glutton 0(health: 4.5) fought Creature 5(health: 3.0)
+Glutton 0(health: 4.0) beat Creature 5(health: 0.5)
+ARCANE MAZE: turn 24
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: Glutton 0(health: 4.0)
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.5), Creature 6(health: 3.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Rolled a 6
+Rolled a 2
+Glutton 0(health: 4.0) fought Creature 6(health: 3.0)
+Glutton 0(health: 3.5) beat Creature 6(health: 0.0); DEAD
+ARCANE MAZE: turn 25
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: Glutton 0(health: 3.5)
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.5), Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Rolled a 5
+Rolled a 4
+Glutton 0(health: 3.5) fought Creature 5(health: 0.5)
+Glutton 0(health: 3.0) beat Creature 5(health: 0.0); DEAD
+ARCANE MAZE: turn 26
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from Southwest to South
+ARCANE MAZE: turn 27
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from South to Southwest
+Glutton 0(health: 3.0) moved from Southwest to South
+ARCANE MAZE: turn 28
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from South to Southwest
+Glutton 0(health: 3.0) moved from Southwest to South
+ARCANE MAZE: turn 29
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from South to Southwest
+Glutton 0(health: 3.0) moved from Southwest to South
+ARCANE MAZE: turn 30
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from South to Southwest
+Glutton 0(health: 3.0) moved from Southwest to West
+ARCANE MAZE: turn 31
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from West to Center
+ARCANE MAZE: turn 32
+	Center:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from Center to West
+Glutton 0(health: 3.0) moved from West to Center
+ARCANE MAZE: turn 33
+	Center:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from Center to West
+Glutton 0(health: 3.0) moved from West to Southwest
+Glutton 0(health: 3.0) moved from Southwest to West
+ARCANE MAZE: turn 34
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from West to Southwest
+Glutton 0(health: 3.0) moved from Southwest to West
+ARCANE MAZE: turn 35
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD, Glutton 0(health: 3.0)
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from West to Center
+ARCANE MAZE: turn 36
+	Center:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 15.0)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Glutton 0(health: 3.0) moved from Center to East
+Rolled a 4
+Rolled a 6
+Glutton 0(health: 3.0) fought Demon 2(health: 15.0)
+Glutton 0(health: 0.5) lost to Demon 2(health: 14.5)
+ARCANE MAZE: turn 37
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	North:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	East:
+	 	 Adventurers: Glutton 0(health: 0.5)
+	 	 Creatures: Creature 2(health: 3.0), Creature 3(health: 3.0), Creature 8(health: 3.0), Demon 2(health: 14.5)
+	 	 Food: Food 1
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 7(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 0(health: 0.0); DEAD, Coward 0(health: 0.0); DEAD
+	 	 Creatures: Demon 4(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD, Adventurer 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: Creature 4(health: 0.0); DEAD, Creature 5(health: 0.0); DEAD, Creature 6(health: 0.0); DEAD
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Adventurer 3(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 9(health: 3.0), Demon 0(health: 8.5), Demon 3(health: 11.5), Demon 5(health: 13.0)
+	 	 Food: 
+Rolled a 5
+Rolled a 2
+Glutton 0(health: 0.5) fought Demon 2(health: 14.5)
+Glutton 0(health: 0.0); DEAD beat Demon 2(health: 11.0)
+Boo, the creatures won
+> Task :test
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.4/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 619ms
+4 actionable tasks: 1 executed, 3 up-to-date
+3:54:37 PM: Execution finished ':test --tests "testGameConfigurator.testGame"'.
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+15:58:10,479 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+15:58:10,479 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - No custom configurators were discovered as a service.
+15:58:10,479 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:58:10,480 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:58:10,482 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+15:58:10,482 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+15:58:10,486 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:58:10,486 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:58:10,486 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:58:10,486 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:58:10,487 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/kailesuoo/Downloads/CSCI4448/homework-2-arcane-setup-ksuoo/build/resources/main/logback.xml]
+15:58:10,529 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:58:10,529 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:58:10,531 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:58:10,546 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [Same_As_Println]
+15:58:10,546 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:58:10,546 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:58:10,547 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [Game_Status] not referenced. Skipping further processing.
+15:58:10,547 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [File_Output] not referenced. Skipping further processing.
+15:58:10,547 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+15:58:10,547 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:58:10,547 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [arcane] to INFO
+15:58:10,548 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [arcane] to false
+15:58:10,548 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [Same_As_Println] to Logger[arcane]
+15:58:10,548 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2c9399a4 - End of configuration.
+15:58:10,549 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@191ae03f - Registering current configuration as safe fallback point
+15:58:10,549 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 63 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Starting play...
+ARCANE MAZE: turn 0
+	Center:
+	 	 Adventurers: Adventurer 1(health: 5.0)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 5.0)
+	 	 Creatures: Demon 0(health: 15.0)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: 
+	 	 Creatures: Creature 1(health: 3.0)
+	 	 Food: 
+	West:
+	 	 Adventurers: Glutton 0(health: 5.0), Knight 0(health: 8.0), Knight 1(health: 8.0)
+	 	 Creatures: 
+	 	 Food: Food 0
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 3.0)
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Coward 0(health: 3.0)
+	 	 Creatures: 
+	 	 Food: 
+Adventurer 1(health: 5.0) moved from Center to South
+Rolled a 3
+Rolled a 6
+Adventurer 0(health: 5.0) fought Demon 0(health: 15.0)
+Adventurer 0(health: 1.5) lost to Demon 0(health: 14.5)
+Rolled a 3
+Rolled a 6
+Adventurer 1(health: 5.0) fought Creature 1(health: 3.0)
+Adventurer 1(health: 1.5) lost to Creature 1(health: 2.5)
+Knight 0(health: 9.0) just ate a Food 0
+Coward 0(health: 3.0) moved from Southeast to South
+ARCANE MAZE: turn 1
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 1.5)
+	 	 Creatures: Demon 0(health: 14.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 1.5), Coward 0(health: 3.0)
+	 	 Creatures: Creature 1(health: 2.5)
+	 	 Food: 
+	West:
+	 	 Adventurers: Glutton 0(health: 5.0), Knight 0(health: 9.0), Knight 1(health: 8.0)
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 3.0)
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Rolled a 3
+Rolled a 3
+Adventurer 0(health: 1.5) fought Demon 0(health: 14.5)
+Adventurer 0(health: 1.0) drew against Demon 0(health: 14.0)
+Coward 0(health: 2.5) moved from South to Center
+Rolled a 6
+Rolled a 5
+Coward 0(health: 2.5) fought Creature 1(health: 2.5)
+Coward 0(health: 2.0) beat Creature 1(health: 1.0)
+Rolled a 5
+Rolled a 6
+Adventurer 1(health: 1.5) fought Creature 1(health: 1.0)
+Adventurer 1(health: 0.0); DEAD lost to Creature 1(health: 0.5)
+Knight 0(health: 9.0) moved from West to Center
+Knight 1(health: 8.0) moved from West to Southwest
+Glutton 0(health: 5.0) moved from West to Center
+Knight 1(health: 8.0) moved from Southwest to West
+ARCANE MAZE: turn 2
+	Center:
+	 	 Adventurers: Coward 0(health: 2.0), Knight 0(health: 9.0), Glutton 0(health: 5.0)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 1.0)
+	 	 Creatures: Demon 0(health: 14.0)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 1(health: 0.5)
+	 	 Food: 
+	West:
+	 	 Adventurers: Knight 1(health: 8.0)
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 3.0)
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 9.0) moved from Center to South
+Glutton 0(health: 5.0) moved from Center to East
+Coward 0(health: 2.0) moved from Center to East
+Rolled a 5
+Rolled a 6
+Adventurer 0(health: 1.0) fought Demon 0(health: 14.0)
+Adventurer 0(health: 0.0); DEAD lost to Demon 0(health: 13.5)
+Glutton 0(health: 5.0) moved from East to Northeast
+Coward 0(health: 2.0) moved from East to Southeast
+Rolled a 6
+Rolled a 1
+Knight 0(health: 9.0) fought Creature 1(health: 0.5)
+Knight 0(health: 8.5) beat Creature 1(health: 0.0); DEAD
+Knight 1(health: 8.0) moved from West to Southwest
+Rolled a 1
+Rolled a 2
+Glutton 0(health: 5.0) fought Creature 0(health: 3.0)
+Glutton 0(health: 3.5) lost to Creature 0(health: 2.5)
+Knight 1(health: 8.0) moved from Southwest to South
+Coward 0(health: 2.0) moved from Southeast to South
+ARCANE MAZE: turn 3
+	Center:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 13.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Knight 0(health: 8.5), Knight 1(health: 8.0), Coward 0(health: 2.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: Glutton 0(health: 3.5)
+	 	 Creatures: Creature 0(health: 2.5)
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 8.5) moved from South to Center
+Knight 1(health: 8.0) moved from South to Southeast
+Coward 0(health: 2.0) moved from South to Southwest
+Rolled a 6
+Rolled a 1
+Glutton 0(health: 3.5) fought Creature 0(health: 2.5)
+Glutton 0(health: 3.0) beat Creature 0(health: 0.0); DEAD
+Coward 0(health: 2.0) moved from Southwest to West
+Knight 1(health: 8.0) moved from Southeast to South
+ARCANE MAZE: turn 4
+	Center:
+	 	 Adventurers: Knight 0(health: 8.5)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 13.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Knight 1(health: 8.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: Coward 0(health: 2.0)
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: Creature 0(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 8.5) moved from Center to South
+Knight 0(health: 8.5) moved from South to Southeast
+Knight 1(health: 8.0) moved from South to Center
+Coward 0(health: 2.0) moved from West to Center
+Glutton 0(health: 3.0) moved from Northeast to East
+Knight 0(health: 8.5) moved from Southeast to South
+ARCANE MAZE: turn 5
+	Center:
+	 	 Adventurers: Knight 1(health: 8.0), Coward 0(health: 2.0)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 13.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: Glutton 0(health: 3.0)
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Knight 0(health: 8.5)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 1(health: 8.0) moved from Center to North
+Coward 0(health: 2.0) moved from Center to East
+Rolled a 5
+Rolled a 1
+Knight 1(health: 8.0) fought Demon 0(health: 13.5)
+Knight 1(health: 7.5) beat Demon 0(health: 9.0)
+Glutton 0(health: 3.0) moved from East to Southeast
+Coward 0(health: 2.0) moved from East to Southeast
+Knight 0(health: 8.5) moved from South to Center
+Glutton 0(health: 3.0) moved from Southeast to East
+Coward 0(health: 2.0) moved from Southeast to East
+ARCANE MAZE: turn 6
+	Center:
+	 	 Adventurers: Knight 0(health: 8.5)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD, Knight 1(health: 7.5)
+	 	 Creatures: Demon 0(health: 9.0)
+	 	 Food: 
+	East:
+	 	 Adventurers: Glutton 0(health: 3.0), Coward 0(health: 2.0)
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 8.5) moved from Center to South
+Rolled a 5
+Rolled a 5
+Knight 1(health: 7.5) fought Demon 0(health: 9.0)
+Knight 1(health: 7.0) drew against Demon 0(health: 8.5)
+Glutton 0(health: 3.0) moved from East to Northeast
+Coward 0(health: 2.0) moved from East to Southeast
+Knight 0(health: 8.5) moved from South to Center
+Glutton 0(health: 3.0) moved from Northeast to North
+Coward 0(health: 2.0) moved from Southeast to South
+ARCANE MAZE: turn 7
+	Center:
+	 	 Adventurers: Knight 0(health: 8.5)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD, Knight 1(health: 7.0), Glutton 0(health: 3.0)
+	 	 Creatures: Demon 0(health: 8.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Coward 0(health: 2.0)
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 8.5) moved from Center to East
+Rolled a 1
+Rolled a 3
+Knight 1(health: 7.0) fought Demon 0(health: 8.5)
+Knight 1(health: 4.5) lost to Demon 0(health: 8.0)
+Rolled a 6
+Rolled a 1
+Knight 1(health: 4.5) fought Demon 0(health: 8.0)
+Knight 1(health: 4.0) beat Demon 0(health: 2.5)
+Knight 0(health: 8.5) moved from East to Center
+Coward 0(health: 2.0) moved from South to Center
+ARCANE MAZE: turn 8
+	Center:
+	 	 Adventurers: Knight 0(health: 8.5), Coward 0(health: 2.0)
+	 	 Creatures: 
+	 	 Food: 
+	North:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD, Knight 1(health: 4.0), Glutton 0(health: 3.0)
+	 	 Creatures: Demon 0(health: 2.5)
+	 	 Food: 
+	East:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	South:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD
+	 	 Creatures: Creature 1(health: 0.0); DEAD
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: Food 1, Food 2
+	Northeast:
+	 	 Adventurers: 
+	 	 Creatures: Creature 0(health: 0.0); DEAD
+	 	 Food: 
+	Southwest:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+Knight 0(health: 8.5) moved from Center to South
+Coward 0(health: 2.0) moved from Center to North
+Rolled a 1
+Rolled a 6
+Knight 1(health: 4.0) fought Demon 0(health: 2.5)
+Knight 1(health: 0.0); DEAD lost to Demon 0(health: 2.0)
+Rolled a 6
+Rolled a 4
+Glutton 0(health: 3.0) fought Demon 0(health: 2.0)
+Glutton 0(health: 2.5) beat Demon 0(health: 0.0); DEAD
+Knight 0(health: 8.5) moved from South to Center
+The adventurers won!
+> Task :test
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.4/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 587ms
+4 actionable tasks: 1 executed, 3 up-to-date
+3:58:10 PM: Execution finished ':test --tests "testGameConfigurator.testGame"'.
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+15:58:22,877 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.14
+15:58:22,877 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - No custom configurators were discovered as a service.
+15:58:22,877 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:58:22,877 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:58:22,880 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+15:58:22,880 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+15:58:22,884 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:58:22,884 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:58:22,884 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:58:22,884 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:58:22,885 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/kailesuoo/Downloads/CSCI4448/homework-2-arcane-setup-ksuoo/build/resources/main/logback.xml]
+15:58:22,925 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:58:22,925 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:58:22,927 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:58:22,941 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [Same_As_Println]
+15:58:22,941 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:58:22,941 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:58:22,941 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [Game_Status] not referenced. Skipping further processing.
+15:58:22,941 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [File_Output] not referenced. Skipping further processing.
+15:58:22,941 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+15:58:22,942 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:58:22,942 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [arcane] to INFO
+15:58:22,942 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [arcane] to false
+15:58:22,942 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [Same_As_Println] to Logger[arcane]
+15:58:22,942 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2c9399a4 - End of configuration.
+15:58:22,943 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@191ae03f - Registering current configuration as safe fallback point
+15:58:22,943 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6c67e137 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 59 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Starting play...
+ARCANE MAZE: turn 0
+	Center:
+	 	 Adventurers: Adventurer 0(health: 5.0), Coward 4(health: 3.0)
+	 	 Creatures: Creature 4(health: 3.0), Creature 6(health: 3.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 8.0)
+	 	 Creatures: Creature 5(health: 3.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 5.0)
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 15.0), Demon 6(health: 15.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 2(health: 3.0)
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 5.0)
+	 	 Creatures: Creature 3(health: 3.0), Creature 9(health: 3.0)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 3.0), Coward 3(health: 3.0)
+	 	 Creatures: Demon 0(health: 15.0), Demon 3(health: 15.0)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 5.0), Glutton 0(health: 5.0)
+	 	 Creatures: Demon 1(health: 15.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 3.0)
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 15.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 5.0), Knight 0(health: 8.0), Knight 2(health: 8.0)
+	 	 Creatures: Creature 8(health: 3.0), Demon 4(health: 15.0)
+	 	 Food: 
+Rolled a 2
+Rolled a 3
+Adventurer 0(health: 5.0) fought Creature 4(health: 3.0)
+Adventurer 0(health: 3.5) lost to Creature 4(health: 2.5)
+Coward 4(health: 2.5) moved from Center to South
+Rolled a 4
+Rolled a 4
+Adventurer 0(health: 3.5) fought Creature 6(health: 3.0)
+Adventurer 0(health: 3.0) drew against Creature 6(health: 2.5)
+Rolled a 4
+Rolled a 5
+Knight 1(health: 8.0) fought Creature 5(health: 3.0)
+Knight 1(health: 6.5) lost to Creature 5(health: 2.5)
+Rolled a 1
+Rolled a 4
+Adventurer 4(health: 5.0) fought Demon 2(health: 15.0)
+Adventurer 4(health: 1.5) lost to Demon 2(health: 14.5)
+Coward 2(health: 3.0) moved from South to Southeast
+Coward 4(health: 2.5) moved from South to Center
+Rolled a 1
+Rolled a 1
+Adventurer 3(health: 5.0) fought Creature 3(health: 3.0)
+Adventurer 3(health: 4.5) drew against Creature 3(health: 2.5)
+Rolled a 3
+Rolled a 2
+Coward 0(health: 3.0) fought Demon 0(health: 15.0)
+Coward 0(health: 2.5) beat Demon 0(health: 13.5)
+Rolled a 3
+Rolled a 6
+Coward 3(health: 3.0) fought Demon 3(health: 15.0)
+Coward 3(health: 0.0); DEAD lost to Demon 3(health: 14.5)
+Rolled a 2
+Rolled a 2
+Adventurer 1(health: 5.0) fought Demon 1(health: 15.0)
+Adventurer 1(health: 4.5) drew against Demon 1(health: 14.5)
+Rolled a 2
+Rolled a 2
+Glutton 0(health: 5.0) fought Demon 1(health: 14.5)
+Glutton 0(health: 4.5) drew against Demon 1(health: 14.0)
+Rolled a 6
+Rolled a 2
+Coward 1(health: 3.0) fought Demon 5(health: 15.0)
+Coward 1(health: 2.5) beat Demon 5(health: 10.5)
+Rolled a 1
+Rolled a 6
+Knight 0(health: 8.0) fought Demon 4(health: 15.0)
+Knight 0(health: 2.5) lost to Demon 4(health: 14.5)
+Rolled a 2
+Rolled a 5
+Knight 2(health: 8.0) fought Demon 4(health: 14.5)
+Knight 2(health: 4.5) lost to Demon 4(health: 14.0)
+Rolled a 5
+Rolled a 6
+Adventurer 2(health: 5.0) fought Demon 4(health: 14.0)
+Adventurer 2(health: 3.5) lost to Demon 4(health: 13.5)
+Rolled a 2
+Rolled a 4
+Knight 2(health: 4.5) fought Demon 4(health: 13.5)
+Knight 2(health: 2.0) lost to Demon 4(health: 13.0)
+ARCANE MAZE: turn 1
+	Center:
+	 	 Adventurers: Adventurer 0(health: 3.0), Coward 4(health: 2.5)
+	 	 Creatures: Creature 4(health: 2.5), Creature 6(health: 2.5)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 6.5)
+	 	 Creatures: Creature 5(health: 2.5)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 1.5)
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 14.5), Demon 6(health: 15.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: 
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 4.5)
+	 	 Creatures: Creature 3(health: 2.5), Creature 9(health: 3.0)
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 2.5), Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 13.5), Demon 3(health: 14.5)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 4.5), Glutton 0(health: 4.5)
+	 	 Creatures: Demon 1(health: 14.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 2.5)
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.5)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 3.5), Knight 0(health: 2.5), Knight 2(health: 2.0), Coward 2(health: 3.0)
+	 	 Creatures: Creature 8(health: 3.0), Demon 4(health: 13.0)
+	 	 Food: 
+Rolled a 3
+Rolled a 6
+Adventurer 0(health: 3.0) fought Creature 4(health: 2.5)
+Adventurer 0(health: 0.0); DEAD lost to Creature 4(health: 2.0)
+Coward 4(health: 2.0) moved from Center to South
+Rolled a 2
+Rolled a 4
+Coward 4(health: 2.0) fought Creature 6(health: 2.5)
+Coward 4(health: 0.0); DEAD lost to Creature 6(health: 2.0)
+Rolled a 1
+Rolled a 5
+Knight 1(health: 6.5) fought Creature 5(health: 2.5)
+Knight 1(health: 2.0) lost to Creature 5(health: 2.0)
+Rolled a 6
+Rolled a 4
+Adventurer 4(health: 1.5) fought Demon 6(health: 15.0)
+Adventurer 4(health: 1.0) beat Demon 6(health: 12.5)
+Rolled a 5
+Rolled a 2
+Adventurer 3(health: 4.5) fought Creature 9(health: 3.0)
+Adventurer 3(health: 4.0) beat Creature 9(health: 0.0); DEAD
+Rolled a 5
+Rolled a 2
+Coward 0(health: 2.5) fought Demon 3(health: 14.5)
+Coward 0(health: 2.0) beat Demon 3(health: 11.0)
+Rolled a 5
+Rolled a 5
+Adventurer 1(health: 4.5) fought Demon 1(health: 14.0)
+Adventurer 1(health: 4.0) drew against Demon 1(health: 13.5)
+Rolled a 2
+Rolled a 2
+Glutton 0(health: 4.5) fought Demon 1(health: 13.5)
+Glutton 0(health: 4.0) drew against Demon 1(health: 13.0)
+Rolled a 1
+Rolled a 3
+Coward 1(health: 2.5) fought Demon 5(health: 10.5)
+Coward 1(health: 0.0); DEAD lost to Demon 5(health: 10.0)
+Rolled a 2
+Rolled a 5
+Adventurer 2(health: 3.5) fought Demon 4(health: 13.0)
+Adventurer 2(health: 0.0); DEAD lost to Demon 4(health: 12.5)
+Rolled a 3
+Rolled a 2
+Coward 2(health: 3.0) fought Demon 4(health: 12.5)
+Coward 2(health: 2.5) beat Demon 4(health: 11.0)
+Rolled a 1
+Rolled a 2
+Knight 0(health: 2.5) fought Demon 4(health: 11.0)
+Knight 0(health: 1.0) lost to Demon 4(health: 10.5)
+Rolled a 6
+Rolled a 4
+Knight 2(health: 2.0) fought Demon 4(health: 10.5)
+Knight 2(health: 1.5) beat Demon 4(health: 8.0)
+Rolled a 6
+Rolled a 4
+Coward 2(health: 2.5) fought Demon 4(health: 8.0)
+Coward 2(health: 2.0) beat Demon 4(health: 5.5)
+ARCANE MAZE: turn 2
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 2.0)
+	 	 Creatures: Creature 5(health: 2.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 1.0)
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 14.5), Demon 6(health: 12.5)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 4.0)
+	 	 Creatures: Creature 3(health: 2.5), Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 2.0), Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 13.5), Demon 3(health: 11.0)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 4.0), Glutton 0(health: 4.0)
+	 	 Creatures: Demon 1(health: 13.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 1.0), Knight 2(health: 1.5), Coward 2(health: 2.0)
+	 	 Creatures: Creature 8(health: 3.0), Demon 4(health: 5.5)
+	 	 Food: 
+Rolled a 3
+Rolled a 4
+Knight 1(health: 2.0) fought Creature 5(health: 2.0)
+Knight 1(health: 0.5) lost to Creature 5(health: 1.5)
+Rolled a 5
+Rolled a 2
+Adventurer 4(health: 1.0) fought Demon 2(health: 14.5)
+Adventurer 4(health: 0.5) beat Demon 2(health: 11.0)
+Rolled a 1
+Rolled a 1
+Adventurer 3(health: 4.0) fought Creature 3(health: 2.5)
+Adventurer 3(health: 3.5) drew against Creature 3(health: 2.0)
+Rolled a 4
+Rolled a 3
+Coward 0(health: 2.0) fought Demon 0(health: 13.5)
+Coward 0(health: 1.5) beat Demon 0(health: 12.0)
+Rolled a 1
+Rolled a 4
+Adventurer 1(health: 4.0) fought Demon 1(health: 13.0)
+Adventurer 1(health: 0.5) lost to Demon 1(health: 12.5)
+Rolled a 1
+Rolled a 3
+Glutton 0(health: 4.0) fought Demon 1(health: 12.5)
+Glutton 0(health: 1.5) lost to Demon 1(health: 12.0)
+Rolled a 2
+Rolled a 6
+Coward 2(health: 2.0) fought Demon 4(health: 5.5)
+Coward 2(health: 0.0); DEAD lost to Demon 4(health: 5.0)
+Rolled a 4
+Rolled a 4
+Knight 2(health: 1.5) fought Demon 4(health: 5.0)
+Knight 2(health: 1.0) drew against Demon 4(health: 4.5)
+Rolled a 4
+Rolled a 6
+Knight 0(health: 1.0) fought Demon 4(health: 4.5)
+Knight 0(health: 0.0); DEAD lost to Demon 4(health: 4.0)
+ARCANE MAZE: turn 3
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.5)
+	 	 Creatures: Creature 5(health: 1.5)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.5)
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.5)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 3.5)
+	 	 Creatures: Creature 3(health: 2.0), Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 1.5), Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 12.0), Demon 3(health: 11.0)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.5), Glutton 0(health: 1.5)
+	 	 Creatures: Demon 1(health: 12.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 1.0), Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 3.0), Demon 4(health: 4.0)
+	 	 Food: 
+Rolled a 2
+Rolled a 4
+Knight 1(health: 0.5) fought Creature 5(health: 1.5)
+Knight 1(health: 0.0); DEAD lost to Creature 5(health: 1.0)
+Rolled a 5
+Rolled a 6
+Adventurer 4(health: 0.5) fought Demon 6(health: 12.5)
+Adventurer 4(health: 0.0); DEAD lost to Demon 6(health: 12.0)
+Rolled a 2
+Rolled a 2
+Adventurer 3(health: 3.5) fought Creature 3(health: 2.0)
+Adventurer 3(health: 3.0) drew against Creature 3(health: 1.5)
+Rolled a 4
+Rolled a 2
+Coward 0(health: 1.5) fought Demon 0(health: 12.0)
+Coward 0(health: 1.0) beat Demon 0(health: 9.5)
+Rolled a 5
+Rolled a 6
+Glutton 0(health: 1.5) fought Demon 1(health: 12.0)
+Glutton 0(health: 0.0); DEAD lost to Demon 1(health: 11.5)
+Rolled a 3
+Rolled a 5
+Adventurer 1(health: 0.5) fought Demon 1(health: 11.5)
+Adventurer 1(health: 0.0); DEAD lost to Demon 1(health: 11.0)
+Rolled a 3
+Rolled a 1
+Knight 2(health: 1.0) fought Demon 4(health: 4.0)
+Knight 2(health: 0.5) beat Demon 4(health: 1.5)
+ARCANE MAZE: turn 4
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 3.0)
+	 	 Creatures: Creature 3(health: 1.5), Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 1.0), Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 9.5), Demon 3(health: 11.0)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.5), Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 3.0), Demon 4(health: 1.5)
+	 	 Food: 
+Rolled a 6
+Rolled a 6
+Adventurer 3(health: 3.0) fought Creature 3(health: 1.5)
+Adventurer 3(health: 2.5) drew against Creature 3(health: 1.0)
+Rolled a 5
+Rolled a 1
+Coward 0(health: 1.0) fought Demon 3(health: 11.0)
+Coward 0(health: 0.5) beat Demon 3(health: 6.5)
+Rolled a 4
+Rolled a 6
+Knight 2(health: 0.5) fought Creature 8(health: 3.0)
+Knight 2(health: 0.0); DEAD lost to Creature 8(health: 2.5)
+ARCANE MAZE: turn 5
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 2.5)
+	 	 Creatures: Creature 3(health: 1.0), Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 0.5), Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 9.5), Demon 3(health: 6.5)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 2.5), Demon 4(health: 1.5)
+	 	 Food: 
+Rolled a 6
+Rolled a 5
+Adventurer 3(health: 2.5) fought Creature 3(health: 1.0)
+Adventurer 3(health: 2.0) beat Creature 3(health: 0.0); DEAD
+Rolled a 3
+Rolled a 6
+Coward 0(health: 0.5) fought Demon 0(health: 9.5)
+Coward 0(health: 0.0); DEAD lost to Demon 0(health: 9.0)
+ARCANE MAZE: turn 6
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: Adventurer 3(health: 2.0)
+	 	 Creatures: Creature 3(health: 0.0); DEAD, Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 0.0); DEAD, Coward 3(health: 0.0); DEAD
+	 	 Creatures: Demon 0(health: 9.0), Demon 3(health: 6.5)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 2.5), Demon 4(health: 1.5)
+	 	 Food: 
+Adventurer 3(health: 2.0) moved from West to Northwest
+Rolled a 3
+Rolled a 1
+Adventurer 3(health: 2.0) fought Demon 0(health: 9.0)
+Adventurer 3(health: 1.5) beat Demon 0(health: 6.5)
+ARCANE MAZE: turn 7
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: Creature 3(health: 0.0); DEAD, Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 0.0); DEAD, Coward 3(health: 0.0); DEAD, Adventurer 3(health: 1.5)
+	 	 Creatures: Demon 0(health: 6.5), Demon 3(health: 6.5)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 2.5), Demon 4(health: 1.5)
+	 	 Food: 
+Rolled a 2
+Rolled a 2
+Adventurer 3(health: 1.5) fought Demon 0(health: 6.5)
+Adventurer 3(health: 1.0) drew against Demon 0(health: 6.0)
+ARCANE MAZE: turn 8
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: Creature 3(health: 0.0); DEAD, Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 0.0); DEAD, Coward 3(health: 0.0); DEAD, Adventurer 3(health: 1.0)
+	 	 Creatures: Demon 0(health: 6.0), Demon 3(health: 6.5)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 2.5), Demon 4(health: 1.5)
+	 	 Food: 
+Rolled a 5
+Rolled a 4
+Adventurer 3(health: 1.0) fought Demon 3(health: 6.5)
+Adventurer 3(health: 0.5) beat Demon 3(health: 5.0)
+ARCANE MAZE: turn 9
+	Center:
+	 	 Adventurers: Adventurer 0(health: 0.0); DEAD
+	 	 Creatures: Creature 4(health: 2.0), Creature 6(health: 2.0)
+	 	 Food: Food 0
+	North:
+	 	 Adventurers: Knight 1(health: 0.0); DEAD
+	 	 Creatures: Creature 5(health: 1.0)
+	 	 Food: Food 2
+	East:
+	 	 Adventurers: Adventurer 4(health: 0.0); DEAD
+	 	 Creatures: Creature 0(health: 3.0), Creature 1(health: 3.0), Demon 2(health: 11.0), Demon 6(health: 12.0)
+	 	 Food: Food 3
+	South:
+	 	 Adventurers: Coward 4(health: 0.0); DEAD
+	 	 Creatures: 
+	 	 Food: 
+	West:
+	 	 Adventurers: 
+	 	 Creatures: Creature 3(health: 0.0); DEAD, Creature 9(health: 0.0); DEAD
+	 	 Food: 
+	Northwest:
+	 	 Adventurers: Coward 0(health: 0.0); DEAD, Coward 3(health: 0.0); DEAD, Adventurer 3(health: 0.5)
+	 	 Creatures: Demon 0(health: 6.0), Demon 3(health: 5.0)
+	 	 Food: 
+	Northeast:
+	 	 Adventurers: Adventurer 1(health: 0.0); DEAD, Glutton 0(health: 0.0); DEAD
+	 	 Creatures: Demon 1(health: 11.0)
+	 	 Food: Food 1
+	Southwest:
+	 	 Adventurers: Coward 1(health: 0.0); DEAD
+	 	 Creatures: Creature 2(health: 3.0), Creature 7(health: 3.0), Demon 5(health: 10.0)
+	 	 Food: 
+	Southeast:
+	 	 Adventurers: Adventurer 2(health: 0.0); DEAD, Knight 0(health: 0.0); DEAD, Knight 2(health: 0.0); DEAD, Coward 2(health: 0.0); DEAD
+	 	 Creatures: Creature 8(health: 2.5), Demon 4(health: 1.5)
+	 	 Food: 
+Rolled a 6
+Rolled a 2
+Adventurer 3(health: 0.5) fought Demon 0(health: 6.0)
+Adventurer 3(health: 0.0); DEAD beat Demon 0(health: 1.5)
+Boo, the creatures won
+> Task :test
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.4/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 552ms
+4 actionable tasks: 1 executed, 3 up-to-date
+3:58:23 PM: Execution finished ':test --tests "testGameConfigurator.testGame"'.
